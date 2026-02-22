@@ -1,44 +1,49 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-   font-family: 'Poppins', sans-serif;
-
-    overflow: hidden;
+/* Reset default spacing of browser */
+html, body { 
+    margin: 0;        /* Removes default outer space */
+    padding: 0;       /* Removes inner spacing */
+    height: 100%;     /* Makes page full height */
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Prevents scrolling */
 }
 
+/* Background Video Styling */
 .bgvideo {
-    position: fixed;
+    position: fixed;   /* Keeps video fixed on screen */
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+    width: 100vw;      /* Full width of screen */
+    height: 100vh;     /* Full height of screen */
+    object-fit: cover; /* Fills screen without distortion */
+    z-index: -1;       /* Sends video behind other content */
 }
 
+/* Content Container */
 .container {
-    position: relative;
-    z-index: 1;
+    position: relative; /* Needed to stay above video */
+    z-index: 1;         /* Makes it appear above video */
     height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;              /* Enables flexbox */
+    flex-direction: column;     /* Stack items vertically */
+    justify-content: center;    /* Center vertically */
+    align-items: center;        /* Center horizontally */
 }
 
+/* Main Title */
 .title {
     font-size: 80px;
     color: white;
     font-weight: 700;
 }
 
+/* Hover effect on title */
 .title:hover {
     color: transparent;
     -webkit-text-stroke: 4px white;
 }
 
+/* Button styling */
 .btn {
     border: 2px solid white;
     color: white;
@@ -47,6 +52,7 @@ html, body {
     cursor: pointer;
 }
 
+/* Button hover effect */
 .btn:hover {
     color: black;
     background-color: white;
