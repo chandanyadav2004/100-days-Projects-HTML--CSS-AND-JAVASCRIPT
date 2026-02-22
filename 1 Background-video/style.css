@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   font-family: 'Poppins', sans-serif;
+
+    overflow: hidden;
+}
+
+.bgvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+}
+
+.title:hover {
+    color: transparent;
+    -webkit-text-stroke: 4px white;
+}
+
+.btn {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
